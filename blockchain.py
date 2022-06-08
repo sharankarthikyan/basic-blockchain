@@ -25,15 +25,16 @@ class Blockchain:
     def get_previous_block(self):
         return self.chain[-1]
 
-    def proof_of_work(self, previous_proof):
+    # In this method we are just creating a nonce for a current block.
+    def proof_of_work(self, previous_proof): # previous_proof is previous block's nonce.
         new_proof = 1 # this variable is Nonce - we are flexibly incrementing this variable until we get our targeting hash.    
         check_proof = False
         while check_proof is False:
             # this `new_proof**2 - previous_proof**2` must not like this, we can change the formula, it our own wish. 
             # But, if we created a Genesis block with one formula, keep the formula for the rest of the block.
-            # This hash operation part is completely upto you. you can hash your data, index of block and proofs also. 
+            # Try to create this hash formula using previous nonce and current nonce that statisfy the targeting hash.
             hash_operation = hashlib.sha256(str(new_proof**2 - previous_proof**2).encode()).hexdigest()
-            if hash_operation[:4] == '0000': # here we are manually targeting the current hash should be with leading four 0s
+            if hash_operation[:4] == '0000': # here we are manually targeting the current hash should be with leading four 0s. This is also our own wish.
                 check_proof = True
             else:
                 new_proof += 1
