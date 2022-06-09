@@ -6,7 +6,7 @@
 5. These 3 nodes are not connected until now.
 6. Once it is connected, we are in a connected network like a complete graph.
 
-<iframe src="https://drive.google.com/file/d/1Wh9NLnwQabFf5_waEXFlHjtf2zWqqDIm/preview" width="640" height="480" allow="autoplay"></iframe>
+
 
 1. In transaction.json,
 ===> Don't put empty string, enter sender, receiver name and amount. But in real transaction, we use sender and receiver's public key.
