@@ -15,5 +15,7 @@
 4. /replace_block - to replace the longest chain of network to that node.
 5. /add_transaction - to add a new transaction in a node.
 
-1. In transaction.json,
+
+## Some info:
+In transaction.json,
 ===> Don't put empty string, enter sender, receiver name and amount. But in real transaction, we use sender and receiver's public key.
