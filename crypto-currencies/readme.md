@@ -8,5 +8,12 @@
 
 ![crypto-network.png](./images/crypto-network.png)
 
+## Endpoints:
+1. /get_chain - to get entire chain of that particular node.
+2. /connect_node - to connect the nodes to form a network.
+3. /mine_block - to mine a new block in a node.
+4. /replace_block - to replace the longest chain of network to that node.
+5. /add_transaction - to add a new transaction in a node.
+
 1. In transaction.json,
 ===> Don't put empty string, enter sender, receiver name and amount. But in real transaction, we use sender and receiver's public key.
